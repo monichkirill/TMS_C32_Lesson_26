@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Registration page</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-$END$
+<body id="body-div">
+<h1>Registration to system:</h1>
+<form action="registration" id="registration-form" method="POST">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <div>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+  </div>
+  <button type="submit" id="button-registration">Registration</button>
+  <a href="login.html" class="btn-link">Sign in</a>
+</form>
+
 </body>
 </html>
