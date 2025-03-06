@@ -85,3 +85,93 @@ input {
 .btn-link:hover{
     background-color: #45a049;
 }
+
+.header-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Чтобы кнопки не скрывались */
+}
+
+.header-buttons form {
+    display: inline;
+}
+
+#profile-photo {
+    width: 500px !important;  /* Увеличили ширину */
+    height: 500px !important; /* Увеличили высоту */
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
+}
+
+#about-me-text-id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-buttons button {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#button-about-me {
+    background-color: #5cb85c;
+}
+
+#button-about-me:hover {
+    background-color: #419541;
+}
+
+#logout-button {
+    background-color: #ff0202;
+}
+
+#logout-button:hover {
+    background-color: #a20000;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+}
+
+#task-btn {
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #5cb85c;
+}
+
+input[type="submit"]:hover {
+    background-color: #419541;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+#delete-button {
+    background-color: #ff0202;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#delete-button:hover {
+    background-color: #a20000;
+}
+
+#task-text {
+    flex-grow: 1;
+}

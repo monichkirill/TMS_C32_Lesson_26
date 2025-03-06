@@ -1,4 +1,4 @@
-package servlet;
+package repository;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,5 +31,9 @@ public class UserRepository {
             users.put(username, password);
         }
         return true;
+    }
+
+    public static Boolean isContainsUserByUsername(String username) {
+        return users.containsKey(username);
     }
 }
